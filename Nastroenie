@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string str;
+    cin >> str;
+    int end = size(str) - 1;
+    switch (str[end])
+    {
+    case '.':
+        cout << "seriously";
+        break;
+    case '?':
+        cout << "question";
+        break;
+    case '!':
+        cout << "ura";
+        break;
+    default:
+        cout << "unknown";
+        break;
+    }
+}
