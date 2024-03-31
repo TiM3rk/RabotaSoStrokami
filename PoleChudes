@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    string str;
+    char* symb;
+    string Answer;
+    cout << "Введите слово для игры:";
+    cin >> str;
+    if (symb != "stop")
+    {
+        cout << "Введите номер буквы, которую хотите открыть (подсчет начинатеся с нуля): ";
+        cin >> symb;
+        Answer = Answer + str[atoi(symb)] + ' ';
+    }
+    else
+    {
+        cout << Answer;
+    }
+}
