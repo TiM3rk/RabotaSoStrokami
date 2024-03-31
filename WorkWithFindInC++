@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string symb;
+    cin >> symb;
+    string str;
+    cin >> str;
+    size_t word = str.find(symb);
+    if (word != std::string::npos)
+    {
+        cout << word;
+    }
+    else
+    {
+        cout << "-1";
+    }
+}
