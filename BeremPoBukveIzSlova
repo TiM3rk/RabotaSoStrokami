@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int count;
+    cin >> count;
+    string str;
+    string Answer;
+    for (int i = 0; i < count; i++)
+    {
+        cin >> str;
+        Answer += str[i];
+    }
+    for (int i = 0; i < count; i++)
+    {
+        cout << Answer[i] << '\n';
+    }
+}
